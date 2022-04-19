@@ -1,0 +1,66 @@
+.vantagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+}
+
+.vantagens-titulo {
+  display: grid;
+  align-items: center;
+  font-size: 4rem;
+  color: var(--subtitulo);
+  text-transform: uppercase;
+  text-align: right;
+  padding: 2rem;
+  background: var(--onda);
+}
+
+.vantagens-geral {
+  display: grid;
+  background: var(--fundo-2);
+  padding: 1.25rem;
+}
+
+.vantagens-sub-geral {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  padding: 1.25rem;
+}
+
+.vantagens-sub-geral:hover {
+  border-left: 2px solid var(--cor-primaria);
+}
+.vantagens-sub-geral p {
+  grid-column: 2;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .vantagens-titulo {
+    font-size: 3rem;
+  }
+
+  .vantagens-sub-geral {
+    padding: 0.75rem;
+  }
+  .vantagens-sub-geral h3 {
+    font-size: 1.125rem;
+  }
+  .vantagens-sub-geral p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .vantagens {
+    grid-template-columns: 1fr;
+  }
+
+  .vantagens-titulo {
+    text-align: center;
+    font-size: 2rem;
+  }
+}

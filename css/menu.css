@@ -1,0 +1,32 @@
+.menu {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 3.75rem;
+  justify-content: center;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.menu-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-nav li a {
+  padding: 1.2rem 1.8rem;
+  background: var(--fundo-2);
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: var(--texto);
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.menu-nav li a:hover {
+  border: 2px solid var(--cor-primaria);
+}
